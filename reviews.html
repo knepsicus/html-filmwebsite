@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Gladiator movie webpage, fansite, fanpage, The Gladiator reviews">
+  <meta name="keywords" content="Gladiator movie, fanpage, fansite, images, spoiler-alert, movie-plot, summary, Ridley Scott, Russell Crowe, Joaquin Phoenix, unofficial">
+  <meta name="author" content="Janne Villak">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Gladiator fanpage</title>
+  <link rel="stylesheet" href="styles/gladiator.css">
+</head>
+<body>
+  <header class="header">
+    <a href="index.html" class="movietitle">The Gladiator</a>
+
+    <nav class="navb">
+      <a href="index.html" class="links">Intro</a>
+      <a href="cast.html" class="links">Cast</a>
+      <a href="gallerij.html" class="links">Gallery</a>
+      <a href="reviews.html" class="links">Reviews</a>
+    </nav>
+  </header>
+  
+  <div class="content">
+    <h1>Algemene Scores in verschillende bekende movie-databases</h1>
+
+    <div class="text">
+      <ol>
+        <li>IMDB: 8.5/10</li>
+        <li>Rotten Tomatoes (publiek): 87%</li>
+        <li>Rotten Tomatoes (critici): 80% (<dfn title="80% positieve recensies van critic, minimum 75% is nodig om Certified Fresh status te raken">Certified Fresh</dfn>)</li>
+        <li><dfn title="Metacritic is een website die beoordelingen en recensies van films, albums, computerspellen, televisieprogramma's, dvd's en boeken samenbrengt voor een algemene beoordeling van een werk.">Metacritic:</dfn> 67/100</li>
+      </ol>
+    </div>
+    
+    <div class="text">
+        <p>"Gladiator" werd door critici geprezen om zijn visuele grandeur, meeslepende gevechtsscènes en sterke acteerprestaties, vooral van Crowe en Phoenix. Crowe’s vertolking van Maximus hielp de film uitgroeien tot een van de meest iconische epische films van de moderne tijd.</p>
+      </div>
+    </div>
+    <h2>Hieronder een paar reviews over het film</h2>
+    <div class="content reviews">        
+      <div class="review">
+        <h3>Roger Ebert (Chicago Sun-Times):</h3>
+        <blockquote>"Gladiator is een verbluffend historisch epos dat spektakel en visueel spektakel brengt, hoewel het verhaal enigszins simplistisch is."</blockquote>
+      </div>
+      <div class="review">
+        <h3>Ian Nathan (Empire Magazine):</h3>
+        <blockquote>"Een magnifieke heropleving van het zwaard-en-sandaal-epos, Gladiator is een spannende mix van spektakel, emotie en politieke intriges."</blockquote>
+      </div>
+    </div>
+    <div class="content reviews"> 
+     <div class="review">
+        <h3>Peter Travers (Rolling Stone):</h3>
+        <blockquote>"Ridley Scott's Gladiator is een visuele triomf, en Russell Crowe geeft het hart en ziel met een torenhoge prestatie die het scherm domineert."</blockquote>
+     </div>
+     <div class="review">
+      <h3>Jonathan Rosenbaum (Chicago Reader):</h3>
+      <blockquote>"Gladiator is historisch onnauwkeurig en veel te afhankelijk van actie, met een voorspelbare plot die de personages reduceert tot louter symbolen van goed en kwaad."</blockquote>
+     </div>
+     </div>
+    <div class="content reviews"> 
+     <div class="review">
+      <h3>Peter Bradshaw (The Guardian):</h3>
+      <blockquote>"Visueel is het een onmiskenbaar succes, maar het verhaal zelf laat veel te wensen over, leunend zwaar op clichés en voorspelbaarheid."</blockquote>
+     </div>
+     <div class="review">
+      <h3>David Denby (The New Yorker):</h3>
+      <blockquote >"Ondanks de grandeur van de veldslagen en sets, mist de film diepgang. De personages blijven oppervlakkig en de verhaallijn voelt overdreven simplistisch en melodramatisch."</blockquote>
+     </div>
+    </div>
+    <div>
+     <h3>Heeft U mening over het film en zou je het graag publiceren?</h3>
+     <div class="enter-review">
+      <form action="pad/naar/phpbestand.php" method="GET" id="commentform">
+        <label for="firstname">Naam:</label><br>
+        <input type="text" id="firstname" name="firstname" placeholder="Uw naam" required>
+      
+      <p class="stars"><label>Uw rating:</label><br>
+        <input type="radio" id="rating1" name="rating" value="one">*<br>
+        <input type="radio" id="rating2" name="rating" value="two">**<br>
+        <input type="radio" id="rating3" name="rating" value="three">***<br>
+        <input type="radio" id="rating4" name="rating" value="four">****<br>
+        <input type="radio" id="rating5" name="rating" value="five">*****<br></p>
+      <p class="country">Van welke land ben je?:</p>
+				<select name="country" id="country">
+					<option value="">Maak je keuze</option>
+	        <option value="BE">BE</option>
+          <option value="NL">NL</option>
+          <option value="DE">DE</option>
+          <option value="UK">UK</option>
+          <option value="IR">IR</option>
+          <option value="DK">DK</option>
+          <option value="FR">FR</option>
+          <option value="SPN">SPN</option>
+          <option value="EST">EST</option>
+				</select>
+
+      <p><label for="review">Je mening:</label></p>
+      <textarea id="review" name="review" rows="4" cols="50" maxlength="1500" placeholder="Laat hier je review achter!" required></textarea>
+
+			<p><input type="checkbox" name="accept" required> Ik ga akkoord met de algemene voorwaarden.</p>
+
+		  <p><input type="submit" name="post" value="Post"></p>
+		</form>
+  </div>
+
+    <footer>Deze materiaal komt grotendeels van <abbr title="Internet Movie DataBase" class="abbr"><a href="https://www.imdb.com">IMDB</a></abbr> en de grote machtige Internet</footer> 
+
+</div>
+</body>
+</html> 

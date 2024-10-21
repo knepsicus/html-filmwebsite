@@ -1,0 +1,339 @@
+body {
+  height: auto;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(190, 190, 190);
+  background-color: black;
+  overflow: auto;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/bg-gladiator.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .75rem;
+  position: sticky;
+  top: 0;
+  background-color: rgba(20, 20, 20, 0.85);
+  border-bottom: 1px solid gold;
+  z-index: 100;
+}
+
+.header:hover {
+  transition: transform 0.5s, box-shadow 0.3s;
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.5);
+}
+
+.movietitle {
+  font-size: 4rem;
+  color: goldenrod;
+}
+
+.movietitle:hover {
+  color: gold;
+  text-decoration: none;
+  font-weight: 400;
+  transition: color 0.5s;
+}
+
+.navb {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.links {
+  color: goldenrod;
+  background-color: rgb(46, 44, 43);
+  border: 1px solid rgb(255, 215, 0);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.links:hover {
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.8);
+  transition: color 0.5s;
+}
+
+.yt-link {
+  color: goldenrod;
+  font-size: 16px;
+  text-decoration: none;
+  margin-left: 1rem;
+  padding: 1rem;
+}
+
+.yt-link:hover {
+  color: gold;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 400;
+  transition: color 0.5s;
+}
+
+a {
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: gold;
+  font-weight: bold;
+  transition: color 0.5s;
+}
+
+h1, h2, h3, q {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  padding: .25rem;
+  color: gold;
+}
+
+.minititle {
+  color: goldenrod;
+}
+.content {
+  padding: .5rem;
+}
+
+.text {
+  margin: .25rem .8rem;
+}
+
+span, q {
+  font-size: 25px;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+
+.fade-in {
+  opacity: 0;
+  color: rgb(255, 208, 0);
+  animation: fadeInAnimation 3s ease-in forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+li {
+  padding: 5px;
+}
+
+table, th, td {
+  border: 1px solid gold;
+  border-collapse: collapse;
+  padding: .25rem;
+  margin: .15rem;
+  background-color: rgba(20, 20, 20, 0.85);
+  padding: 15px;
+}
+
+.charts {
+  display: flex;
+  justify-content: center; 
+  
+}
+
+.charts-titles, .review h3 {
+  font-size: 1.5rem;
+  justify-content: center;  
+  align-items: center;
+  padding: .5rem;
+  color: gold;
+}
+
+.charts-one, .charts-two {
+  padding: 15px;
+}
+
+th {
+  color: goldenrod;
+  padding: 1rem;
+}
+
+tr:hover {
+  background-color: rgba(255, 215, 0, 0.2);
+}
+
+.image-areyou {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  padding: .5rem;
+}
+
+.img-front {
+  border: 1px solid gold;
+}
+
+.gallery {
+ display: grid;
+ grid-template-columns: minmax(400px, 1fr);
+ gap: 20px;
+ padding: 1rem;
+}
+
+.images {
+  width: auto;
+  height: 300px;
+  object-fit: cover;
+  border: none;
+  transition: transform 0.4s ease, margin 0.6s ease;
+  border-radius: 10px;
+  border: 1px solid gold;
+  display: block;
+  margin: 0 auto;
+}
+
+.images:hover {
+  transform: scale(1.2);
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.reviews {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 20px;
+  padding: .25rem;
+}
+
+.review {
+  border: 1px solid gold;
+  border-radius: 6px;
+  background-color: rgba(20, 20, 20, 0.85);
+}
+
+.enter-review {
+  border: 1px solid gold;
+  background: rgba(20, 20, 20, 0.85);
+  margin: 20px auto;
+  padding: 2rem;
+  width: 80%;
+  max-width: 600px;
+}
+
+label, .country {
+  display: block;
+  color: goldenrod;
+  font-size: 16px;
+}
+
+input, select, textarea {
+  padding: .75rem;
+  border-radius: 2px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  height: 100px;
+}
+
+.stars {
+  color: gold;
+  font-size: 20px;
+}
+
+input[type="submit"] {
+  background-color: gold;
+  color: black;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.abbr {
+  font-style: italic;
+}
+
+.actors-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.img-container {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  text-align: center; 
+  width: 150px; 
+}
+
+.img-container img {
+  width: 150px; 
+  height: 200px;
+  border: 1px solid gold;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.img-container p {
+  margin: 10px 0 0; 
+  color: goldenrod; 
+  font-size: 16px;
+}
+
+.soundtrack-container, .soundtrack table {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  border-collapse: collapse;
+}
+
+.soundtrack {
+  width: 35%;
+  max-width: 800px;
+  background-color: rgba(20, 20, 20, 0.85);
+  border-radius: 10px;
+  padding: 15px;
+}
+
+footer {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 1rem;
+  color: goldenrod;
+  background-color: rgba(20, 20, 20, 0.85);
+  border-top: 1px solid gold;
+}
+
+/*
+.text {
+  border: 1px solid gold;
+   background-color: rgba(20, 20, 20, 0.85);
+}*/
